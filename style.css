@@ -216,8 +216,7 @@ ul li a.active{
 
 .shadow{
     position: relative;
-    top: 10%;
-    height: 650px;
+    height: 100%;
     width: 100%;
     left: 0;
     z-index: 21;
@@ -867,7 +866,7 @@ textarea::placeholder {
         width: 100%;
     }
     .shadow{
-        height: 850px;
+        height: 100%;
     }
 }
 @media(min-height: 900px){
@@ -879,7 +878,7 @@ textarea::placeholder {
         right: 0;
     }
         .shadow{
-        height: 1000px;
+        height: 100%;
     }
 }
 
@@ -892,14 +891,6 @@ textarea::placeholder {
         right: 0;
     }
     .shadow{
-        height: 1200px;
-    }
-}
-
-@media(min-height: 1300px){
-
-    .shadow{
-        margin-top: 10%;
-        height: 1400px;
+        height: 100%;
     }
 }
