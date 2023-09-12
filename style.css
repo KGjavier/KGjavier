@@ -865,6 +865,9 @@ textarea::placeholder {
         position: absolute;
         width: 100%;
     }
+    .shadow{
+        height: 100%;
+    }
 }
 @media(min-height: 900px){
     .sky{
