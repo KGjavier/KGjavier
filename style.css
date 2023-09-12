@@ -216,6 +216,7 @@ ul li a.active{
 
 .shadow{
     position: relative;
+    top: 20%;
     height: 650px;
     width: 100%;
     left: 0;
