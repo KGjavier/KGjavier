@@ -895,3 +895,10 @@ textarea::placeholder {
         height: 1200px;
     }
 }
+
+@media(min-height: 1300px){
+
+    .shadow{
+        height: 1400px;
+    }
+}
