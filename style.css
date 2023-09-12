@@ -878,7 +878,7 @@ textarea::placeholder {
         right: 0;
     }
         .shadow{
-        height: 1000px;
+        height: 100%;
     }
 }
 
