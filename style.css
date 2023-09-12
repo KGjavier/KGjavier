@@ -129,7 +129,6 @@ ul li a.active{
 }
 
 #home:after{
-
     position: absolute;
     width: 100%;
     height: 100%;
@@ -146,7 +145,6 @@ ul li a.active{
 .scrolled-nav {
     background-color: #151515;
     opacity: 0.9;
-
 }
 
 
@@ -159,6 +157,7 @@ ul li a.active{
     right: 0;
     z-index: 19;
 }
+
 .person{
     position: absolute;
     width: 450px;
@@ -166,6 +165,7 @@ ul li a.active{
     left: 0px;
     z-index: 20;
 }
+
 .mountain2{
     position: absolute;
     width: 900px;
@@ -173,6 +173,7 @@ ul li a.active{
     left: 0;
     z-index: 18;
 }
+
 .mountain3{
     position: absolute;
     width: 1100px;
@@ -180,6 +181,7 @@ ul li a.active{
     right: 0;
     z-index: 17;
 }
+
 .sky{
     position: absolute;
     width: 100%;
@@ -187,6 +189,7 @@ ul li a.active{
     bottom: 300px;
     right: 0;
 }
+
 .small-title{
     position: absolute;
     z-index: 25;
@@ -198,6 +201,7 @@ ul li a.active{
     font-weight: 00;
     color: #151515;
 }
+
 .big-title{
     position: absolute;
     z-index: 25;
@@ -210,15 +214,13 @@ ul li a.active{
     color: #151515;
 }
 
-
 .shadow{
     position: relative;
-    top:-100%;
-    height: 2200px;
+    height: 650px;
     width: 100%;
     left: 0;
     z-index: 21;
-    background: linear-gradient(to top, #151515, transparent);
+    background: linear-gradient(to top, #151515 6%, transparent);
 }
 
 
@@ -243,11 +245,9 @@ section .about__container{
 .content{
     color: #fff;
     width: 100%;
-
 }
 
 .title{
-
     padding-top: 200px;
     font-weight: 600;
     font-size: 1.5rem;
@@ -270,7 +270,6 @@ section .about__container{
 .contact__social a {
     margin-right: 20px; 
     text-decoration: none; 
-    
 }
 .contact__social img {
     width: 60px;
@@ -283,20 +282,19 @@ section .about__container{
     align-items: center;
 }
 
-
 .linkedin{
     width: 60px;
     text-decoration: none;
     margin-top: 10rem;
     background-color: #fff;
     border-radius: 20%;
-
 }
 
 .linkedin:hover{
     background-color: #f39c12;
     transition: all .3s ease-in-out;
 }
+
 .github{
     width: 70px;
     text-decoration: none;
@@ -314,8 +312,6 @@ section .about__container{
 
 
 
-
-
 /*Skills*/
 
 .skills__content{
@@ -324,6 +320,7 @@ section .about__container{
     margin-top: 100px;
     margin-right: auto;
 }
+
 .skills__title{
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -337,7 +334,6 @@ section .about__container{
     margin-left: 20px;
     z-index: 25;
     filter: drop-shadow(0 0 0.2rem  #fff);
-
 }
 
 .stones1Grey,
@@ -347,8 +343,8 @@ section .about__container{
     z-index: 26;
     height: 50px;
     margin-right: 0px;
-
 }
+
 .stones1Grey{
     height: 42px;
     margin-left: -164px;
@@ -644,7 +640,6 @@ textarea::placeholder {
 }
 
 .backTop:hover{
-
         background-color: transparent;
         border-color:  #17181b;
         color: #17181b;
@@ -652,15 +647,22 @@ textarea::placeholder {
 
 }
 
+@media (max-width: 1200px){
+    .sky{
+        width: 100%;
+    }
+}
 
 
 @media (max-width: 1000px){
     section .about__container{
         width: 600px;
     }
+
     section .skills__container{
         width: 600px;
-    }    
+    }  
+
     section .contact_container{
         width: 600px;
     }
@@ -669,9 +671,11 @@ textarea::placeholder {
     .skills__title{
         margin-top: -50px;
     }
+
     .stones{
         width: 280px;
     }
+
     .stones1Grey{
         height: 37px;
         margin-left: -133px;
@@ -753,7 +757,6 @@ textarea::placeholder {
     flex-direction: column;
     width:90%;
 
-    
     }
     iframe{
         width: auto;
@@ -784,11 +787,13 @@ textarea::placeholder {
         font-size: 3rem;
         text-shadow: 2px 2px 4px #f39c12;
     }
+
     .small-title{
         color: #151515;
         font-size: 1.5rem;
         text-shadow: 2px 2px 4px#f39c12;
     }
+
     .text{
         font-size: .8rem;
     }
@@ -797,14 +802,14 @@ textarea::placeholder {
         margin-left: auto;
         margin-right: auto;
     }
+
     .contact__social a {
         margin-right: 10px; 
-
     }
+
     .contact__social img {
         width: 30px;
         height: 30px;
-
     }
 
     .instruction,
@@ -821,6 +826,7 @@ textarea::placeholder {
     section .contact__container{
         padding-top: 6rem;
     }
+
     .skills__title{
         font-size: 1.5rem;
         margin-top: -10px;
@@ -832,11 +838,13 @@ textarea::placeholder {
         padding: 2rem;
         padding-top:0rem;
     }
+
     section .skills__container{
         display: block;
         width: 350px;
         padding-top: 60px;
     }
+
     .skills__content{
         width: 280px;
         height: 180px;
@@ -845,3 +853,35 @@ textarea::placeholder {
         margin-right: auto;
         }
     }
+
+@media(min-height: 700px){
+    .shadow{
+        height: 100%;
+    }
+}
+
+@media(min-height: 800px){
+    .sky{
+        position: absolute;
+        width: 100%;
+    }
+}
+@media(min-height: 900px){
+    .sky{
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        bottom: 300px;
+        right: 0;
+    }
+}
+
+@media(min-height: 1000px){
+    .sky{
+        position: absolute;
+        width: 100%;
+        height: 80vh;
+        bottom: 300px;
+        right: 0;
+    }
+}
