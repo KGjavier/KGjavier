@@ -899,6 +899,7 @@ textarea::placeholder {
 @media(min-height: 1300px){
 
     .shadow{
+        margin-top: 30%;
         height: 1400px;
     }
 }
