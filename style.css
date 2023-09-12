@@ -877,6 +877,9 @@ textarea::placeholder {
         bottom: 300px;
         right: 0;
     }
+        .shadow{
+        height: 1000px;
+    }
 }
 
 @media(min-height: 1000px){
