@@ -799,6 +799,7 @@ textarea::placeholder {
     }
 
     .skills__container{
+        padding-left: 15px;
         margin-left: auto;
         margin-right: auto;
     }
