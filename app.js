@@ -86,7 +86,7 @@ window.addEventListener('scroll', () => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
         
-        if (pageYOffset >= sectionTop - sectionHeight / 3) {
+        if (scrollY >= sectionTop - sectionHeight / 3) {
             currentSection = section.getAttribute('id');
             instructionContent.style.display = 'block';
             frontendContent.style.display = 'none';
