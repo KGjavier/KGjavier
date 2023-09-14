@@ -313,6 +313,11 @@ section .about__container{
 
 
 /*Skills*/
+.skills{
+    width: 100%;
+    height: 100vh;
+    background-color: #151515;
+}
 
 .skills__content{
     color: #fff;
