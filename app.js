@@ -39,6 +39,47 @@ const navbar = document.querySelector('.navbar');
 const sections = document.querySelectorAll('section'); // Get all sections
 const navLinks = document.querySelectorAll('.navbar a'); // Get all navigation links
 
+
+// Function to add "active" class to the present section in scroll
+function setActiveSection() {
+    const scrollPosition = window.scrollY;
+
+    // Loop through sections to find the present section
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            // Remove "active" class from all links
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Find the corresponding link and add "active" class
+            const targetLinkId = section.getAttribute('id');
+            const targetLink = document.querySelector(`.navbar a[href="#${targetLinkId}"]`);
+            if (targetLink) {
+                targetLink.classList.add('active');
+            }
+
+            // Check if the section meets your additional condition for skills section initial rendering
+            if (scrollPosition >= sectionTop - sectionHeight / 3) {
+                currentSection = section.getAttribute('id');
+                instructionContent.style.display = 'block';
+                frontendContent.style.display = 'none';
+                backendContent.style.display = 'none';
+                otherContent.style.display = 'none';
+            }
+        }
+
+        
+    });
+}
+
+// Call the function when scrolling
+window.addEventListener('scroll', setActiveSection);
+
+// Click
 hamburgerMenu.addEventListener('click', () => {
     hamburgerMenu.classList.toggle('active'); // Toggle the "active" class
     navbar.classList.toggle('show'); // Toggle the navigation menu
@@ -63,6 +104,7 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
         // Add active class to clicked link
         this.classList.add('active');
 
+
         // Scroll to the section
         const targetSectionId = this.getAttribute('href').slice(1);
         const targetSection = document.getElementById(targetSectionId);
@@ -76,32 +118,6 @@ document.querySelectorAll('.navbar a').forEach(anchor => {
         });
 
     });
-
-
-// Update active link on scroll
-window.addEventListener('scroll', () => {
-    let currentSection = '';
-    
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
-        
-        if (scrollY >= sectionTop - sectionHeight / 3) {
-            currentSection = section.getAttribute('id');
-            instructionContent.style.display = 'block';
-            frontendContent.style.display = 'none';
-            backendContent.style.display = 'none';
-            otherContent.style.display = 'none';
-        }
-    });
-    
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === currentSection) {
-            link.classList.add('active');
-        }
-    });
-});
 
 //Hover Skills
 const clickableImages = document.querySelectorAll('.hoverable-image');
