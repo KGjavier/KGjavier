@@ -365,7 +365,7 @@ section .about__container{
 
 .stones3Grey{
     height: 88px;
-    margin-left: -198px;
+    margin-left: -197px;
     margin-top: 190px;
 }
 
@@ -379,11 +379,30 @@ section .skills__container{
     margin-right: auto;
     min-height: 100vh;
 }
+
 .hoverable-image {
     transition: transform 0.4s ease-in-out;
-    border-radius: 50%;
+    border-radius: 40%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 30%;
     border-style: none;
+}
 
+.stones2Grey{
+    transition: transform 0.4s ease-in-out;
+    border-top-left-radius: 70%;
+    border-top-right-radius: 60%;
+    border-bottom-left-radius: 43%;
+    border-bottom-right-radius: 65%;
+    border-style: none;
+}
+
+.stones3Grey{
+    transition: transform 0.4s ease-in-out;
+    border-top-left-radius: 65%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 50%;
+    border-style: none;
 }
 
 .hoverable-image:hover {
