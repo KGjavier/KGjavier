@@ -512,6 +512,7 @@ a .githubProject:hover{
 .icon{
     width: 50px;
     height: 50px;
+    margin-top: 1rem;
 }
 .stacks{
     margin-top: 15px;
